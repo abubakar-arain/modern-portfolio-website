@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;}
+  
+/* Buttons */
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+.filter-buttons button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-buttons button:hover {
+  background: #4a47d1;
+}
+/*project card */
+#projects {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.project-card {
+  font-size: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* smoother transition */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+.project-card:hover {
+  transform: translateY(-25px) scale(1.1); /* stronger lift + zoom */
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35); /* deeper, larger shadow */
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+}
+/* Hover Info (hidden by default) */
+.project-info {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.project-card:hover .project-info {
+  opacity: 1;
+}
+.view-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 6px 14px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+.view-btn:hover {
+  background: #0056b3;
+}
+
+/* Animation for smooth entry */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

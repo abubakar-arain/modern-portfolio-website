@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.style.css">
+   <link rel="stylesheet" href="footer.style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img class="logo" src="pic/logo.png" alt="logo" />
+      <h1>Abu Bakar-Portfolio</h1>
+      <div class="hamburger" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h2 class="fade-up">Hello, I'm Abu Bakar</h2>
+        <p class="fade-up delay-1">
+          A passionate Computer Science student and aspiring developer. I love
+          building web applications and solving coding problems.
+        </p>
+      </div>
+      <img src="pic/bg.png.png" alt="Profile Picture" />
+    </section>
+    <hr />
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am an undergraduate Computer Science student with a strong interest in
+        web development, problem-solving,Communication and Team Work. Skilled in HTML,
+        CSS, JavaScript,C++. I enjoy learning new technologies and
+        applying them to real-world projects.
+      </p>
+    </section>
+    <hr />
+    <!-- Projects Section -->
+     <section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="filter-buttons">
+    <button data-category="all">All</button>
+  <button data-category="Websites">Websites</button>
+  <button data-category="Designs">Designs</button>
+  <button data-category="Mini Apps">Mini Apps</button>
+  </div>
+  <div id="project-container"></div>
+</section>
+    <hr>
+    <!-- Gallery -->
+     <section class="Gallery">
+     <h2 class="gallery">Gallery-Project</h2>
+  <div class="gallery">
+    <img src="projects images/tribute website.png" alt="Image 1">
+    <img src="projects images/job application.png" alt="Image 2">
+    <img src="projects images/parallel website.png" alt="Image 3">
+    <img src="projects images/my tune .png" alt="Image 4">
+    <img src="projects images/qr code.png" alt="Image 5">
+    <img src="projects images/number spinner.png" alt="Image 6">
+  </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="closeBtn">&times;</span>
+    <img id="lightboxImg" alt="Expanded gallery image">
+  </div>
+  <button class="topBtn" id="btnn">Top ↑</button>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-section">
+      <img src="pic/logo.png" alt="logo" class="logo">
+      <p>"Building fast, beautiful websites that work everywhere."</p>
+      <h4>About Us</h4>
+      <p>Passionate Frontend Developer skilled in HTML, CSS, and JavaScript. I enjoy creating clean, responsive, and user-friendly websites.</p>
+      <div class="contact-info">
+        <div><i class="fas fa-phone"></i>‪+92 3196205024‬</div>
+        <div><i class="fas fa-envelope"></i>abubakar.kamran22@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="footer-section footer-links">
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#">More Search</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section footer-links">
+      <h4>Helpful Links</h4>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Supports</a></li>
+        <li><a href="#">Terms & Condition</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section subscribe">
+      <label for="email">Email Me For More Information</label>
+      <input type="email" id="email" placeholder="Enter your Email" />
+      <br />
+      <button type="submit">Submit</button>
+
+      <div class="social-icons">
+        <a href="https://github.com/abubakar-arain" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+        <a href="https://abubakar.kamran22@gmail.com" target="_blank" aria-label="Google"><i class="fab fa-google"></i></a>
+        <a href="https://x.com/ab_araien?t=iuFwe-7svOvX28Fyy-5GnQ&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/abubaker-kamran-86a0b6254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    2018 © company.Ltd. All Right reserved
+  </div>
+</footer>
+  </body>
+    <script src="projects.js"></script>
+  <script src="porfolio.js"></script>
+</html>
